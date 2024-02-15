@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - @inglaph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <section class="in-text">
+                <div class="in-text__logo">
+                    <img class="" src="./img/Logo.png" alt="">
+                </div>
+                <form action="">
+                    <textarea class="in-text__textarea" name="inText" id="inText" cols="30" rows="10"
+                        placeholder="Ingrese el texto a aqui"></textarea>
+
+                    <div class="in-text__controls">
+                        <div class="controls-rules">
+                            <img class="controls-rules__icon" src="./img/bi_exclamation-circle-fill.png" alt="">
+                            <p class="controls-rules__msj">Solo letras minusculas y sin acentos</p>
+                        </div>
+                        <div class="controls-btns">
+                            <button class="controls-btns__btn" type="submit">Encriptar</button>
+                            <button class="controls-btns__btn controls-btns__btn--decrypt"
+                                type="submit">Desencriptar</button>
+                        </div>
+                </form>
+            </section>
+
+            <section class="out-text">
+                <div class="out-text__result">
+                    <div class="result__msj">
+                        <img src="./img/Muñeco.png" alt="Dibujo diamante">
+                        <p class="out-text__result--p1">
+                            <!-- <span class="letter-w"> Ningún mensaje fue encontrado </span>
+                                <span class="letter-l">Ingresa el texto que desees encriptar o desencriptar</span> -->
+
+                        </p>
+                        <p class="out-text__result--p2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Voluptates, debitis quasi porro libero
+                            totam corrupti. Laudantium deserunt id obcaecati esse, alias corporis totam sed excepturi.
+                            esciunt quidem repudiandae aut impedit, quas perferendis nam sunt!</p>
+
+                    </div>
+                    <div id="div-btn--copy">
+                        <button class="controls-btns__btn controls-btns__btn--copy" type="submit">Copiar</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
