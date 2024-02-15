@@ -52,7 +52,7 @@ img {
 /* -> 1 page styles  movil  *************************************/
 /* -> main ***************************************/
 main {
-    /* background: violet; */
+    background: var(--color-blanco-fondo);
     width: 91.47%;
     padding: 24px 16px 32px 16px;
     /* height: 91.8vh; */
@@ -89,6 +89,7 @@ main {
 }
 
 .in-text__textarea {
+    background: var(--color-blanco-fondo);
     border: none;
     width: 100%;
     height: 50%;
@@ -96,6 +97,7 @@ main {
     font-size: 32px;
     font-family: var(--font-inter);
     color: var(--color-azul-boton-enc);
+    resize: none;
 }
 
 .in-text__textarea:focus {
@@ -213,11 +215,48 @@ main {
     padding: 10px 32px 20px 32px;
     text-align: left;
     /* background: yellow; */
-    /* color: var(--color-grisOscuro-letra);
-    font-size: 32px;
+    color: var(--color-grisOscuro-letra);
+    font-size: 24px;
     font-family: var(--font-inter);
-    color: red; */
+    line-height: 150%;
 }
+
+/* -> footer ***************************************/
+footer {
+    padding: 0;
+    margin: 0;
+    background: var(--color-blanco-fondo);
+    width: 100%;
+    height: 8.2%;
+}
+
+.footer__container {
+    background: var(--color-blanco-puro);
+    background: var(--color-grisClaro-letra);
+
+    width: 91.47%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer__container span {
+    display: block;
+    padding-bottom: 3px;
+    font-size: 1.4rem;
+    color: var(--color-blanco-puro);
+    text-align: center;
+}
+
+.footer__container a {
+    color: var(--color-blanco-puro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
 
 
 /* ->  page styles  tablet - V  *************************************/
@@ -247,6 +286,12 @@ main {
     .controls-btns__btn {
         width: 48%;
         margin-top: 0;
+        cursor: pointer;
+    }
+
+    .controls-btns__btn:hover {
+        transform: scale(1.05);
+        font-weight: bold;
     }
 
     #div-btn--copy {
@@ -275,7 +320,6 @@ main {
 }
 
 /* ->  page styles  desktop *************************************/
-/* ->  page styles  tablet - V  *************************************/
 @media (min-width: 1024px) {
 
     /* -> main ***************************************/
@@ -300,14 +344,14 @@ main {
     .in-text,
     .out-text {
         /* outline: solid 1px red; */
-        height: 91%;
+        height: 82%;
         padding: 80px 0 0 0;
         margin: 0;
 
     }
 
     .in-text {
-        width: 59%;
+        width: 52%;
         /* background: yellow; */
     }
 
@@ -371,6 +415,20 @@ main {
         color: var(--color-grisOscuro-letra);
         font-size: 2.4rem;
         font-family: var(--font-inter);
+    }
+
+
+    /* -> footer ***************************************/
+
+    .footer__container {
+        width: 82%;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .footer__container span {
+        padding-left: 10px;
+        display: inline-block;
     }
 
 }
