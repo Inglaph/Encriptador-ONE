@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,11 @@
                     <img class="" src="./img/Logo.png" alt="">
                 </div>
                 <form action="">
-                    <textarea class="in-text__textarea" name="txa-inText" id="txa-inText" cols="30" rows="10"
+                    <div class="icon-container">
+                        <img class="icon-paste icon-paste--" src="./img/copy_paste_icon.svg" alt="pegar" title="pegar">
+                    </div>
+
+                    <textarea class="in-text__textarea" name="txa-inText" id="txa-inText" cols="30" rows="8"
                         placeholder="Ingrese el texto a aqui"></textarea>
 
                     <div class="in-text__controls">
@@ -39,23 +43,20 @@
 
             <section class="out-text">
                 <div class="out-text__result">
-                    <div class="result__msj">
-                        <img src="./img/Muñeco.png" alt="Dibujo diamante">
-                        <p class="out-text__result--p1">
+                    <div id="div-result-mjs" class="result__msj">
+                        <!-- <img class="img-diamont" src="./img/Muñeco.png" alt="Dibujo diamante"> -->
+                        <p id="p-outText-init" class="out-text__result--p1">
                             <!-- <span class="letter-w"> Ningún mensaje fue encontrado </span>
                                 <span class="letter-l">Ingresa el texto que desees encriptar o desencriptar</span> -->
 
                         </p>
-                        <p id="p-outText" class="out-text__result--p2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Voluptates, debitis quasi porro libero
-                            totam corrupti. Laudantium deserunt id obcaecati esse, alias corporis totam sed excepturi.
-                            esciunt quidem repudiandae aut impedit, quas perferendis nam sunt!</p>
-
+                        <p id="p-outText" class="out-text__result--p2"></p>
                     </div>
                     <div id="div-btn--copy">
                         <button id="btn-copy" class="controls-btns__btn controls-btns__btn--copy"
                             type="submit">Copiar</button>
+
+                        <button class="btn controls-btns__btn controls-btns__btn--copy" id="btn-copy">Copiar</button>
                     </div>
                 </div>
             </section>
@@ -67,9 +68,7 @@
         <div class="footer__container">
             <p>
                 <span><a href="https://www.oracle.com/co/education/oracle-next-education/" title="Web Oracle ONE">Oracle
-                        ONE
-                        Next
-                        Education.</a> G6</span>
+                        ONE Next Education.</a> G6</span>
                 <span>By <a href="https://github.com/Inglaph" target="_blank" title="github">@inglaph</a> © 2024</span>
             </p>
         </div>
