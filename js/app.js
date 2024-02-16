@@ -37,7 +37,7 @@ const $btnEncrypt = document.querySelector('#btn-encrypt');
 const $btnDecript = document.querySelector('#btn-decrypt');
 const $pOutText = document.querySelector('#p-outText');
 
-let $btnCopy;
+let $btnCopy = document.querySelector('#btn-copy');
 let verify;
 let decriptedText = "";
 
@@ -140,6 +140,15 @@ function decryptText(text, controlIndex = 0) {
     return decriptedText;
 }
 
+function copyResultText() {
+    let textToCopy = $pOutText.textContent;
+    console.log("Clipboard antes del copiado: " + textToCopy);
+    // uso clipboard para copiar el texto
+    navigator.clipboard.writeText(textToCopy);
+    console.log("Clipboard des del copiado: " + textToCopy);
+
+}
+
 // Eventos *****************************************
 // agrego el evento al botón de encryptar
 $btnEncrypt.addEventListener('click', (e) => {
@@ -151,6 +160,12 @@ $btnEncrypt.addEventListener('click', (e) => {
 $btnDecript.addEventListener('click', (e) => {
     e.preventDefault();
     exeEncryptDecrypt("decript");
+});
+
+// agrego el evento al botón de copiar
+$btnCopy.addEventListener('click', (e) => {
+    e.preventDefault();
+    copyResultText();
 });
 
 
