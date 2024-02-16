@@ -21,7 +21,7 @@
                     <img class="" src="./img/Logo.png" alt="">
                 </div>
                 <form action="">
-                    <textarea class="in-text__textarea" name="inText" id="inText" cols="30" rows="10"
+                    <textarea class="in-text__textarea" name="txa-inText" id="txa-inText" cols="30" rows="10"
                         placeholder="Ingrese el texto a aqui"></textarea>
 
                     <div class="in-text__controls">
@@ -30,8 +30,8 @@
                             <p class="controls-rules__msj">Solo letras minusculas y sin acentos</p>
                         </div>
                         <div class="controls-btns">
-                            <button class="controls-btns__btn" type="submit">Encriptar</button>
-                            <button class="controls-btns__btn controls-btns__btn--decrypt"
+                            <button id="btn-encrypt" class="controls-btns__btn" type="submit">Encriptar</button>
+                            <button id="btn-decrypt" class="controls-btns__btn controls-btns__btn--decrypt"
                                 type="submit">Desencriptar</button>
                         </div>
                 </form>
@@ -46,7 +46,7 @@
                                 <span class="letter-l">Ingresa el texto que desees encriptar o desencriptar</span> -->
 
                         </p>
-                        <p class="out-text__result--p2">
+                        <p id="p-outText" class="out-text__result--p2">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Voluptates, debitis quasi porro libero
                             totam corrupti. Laudantium deserunt id obcaecati esse, alias corporis totam sed excepturi.
@@ -73,4 +73,6 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
