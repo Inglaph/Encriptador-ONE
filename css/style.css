@@ -30,13 +30,16 @@
 
 html {
     font-size: 62.5%;
+    /*1rem = 10px*/
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+    /*para que el scroll sea suave*/
 }
 
 body {
     font-size: 1.6rem;
     overflow-x: hidden;
+    /*para que no se vea el scroll horizontal*/
 }
 
 /*lap : hago que las imagenes sean responsivas*/
@@ -55,18 +58,15 @@ main {
     background: var(--color-blanco-fondo);
     width: 91.47%;
     padding: 24px 16px 32px 16px;
-    /* height: 91.8vh; */
     height: 90%;
 }
 
 .container {
     height: 100%;
-    /* background: greenyellow; */
 }
 
 .in-text {
     height: 65%;
-    /* background: rgb(22, 109, 112); */
 
 }
 
@@ -131,9 +131,6 @@ main {
     font-family: var(--font-inter);
 }
 
-.in-text__controls {
-    /* background: yellow; */
-}
 
 .controls-rules {
     display: flex;
@@ -171,7 +168,6 @@ main {
 .controls-btns__btn--copy {
     margin-top: 24px;
     background-color: var(--color-blanco-fondo);
-    /* background: var(--color-azul-boton-des); */
     color: var(--color-azul-boton-enc);
     border: 1px solid var(--color-azul-boton-enc);
 }
@@ -179,7 +175,6 @@ main {
 .out-text {
     margin-top: 40px;
     height: 30%;
-    /* background: rgb(22, 109, 112); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -191,8 +186,8 @@ main {
     height: 100%;
     border-radius: 20px;
     box-shadow:
-        0px 100px 80px rgb(0, 0, 0, 7%),
-        0px 64.81px 48.85px rgb(0, 0, 0, 5.31%),
+        0px 100px 60px rgb(0, 0, 0, 7%),
+        0px 64.81px 38.85px rgb(0, 0, 0, 5.31%),
         0px 38.52px 25.48px rgb(0, 0, 0, 4.25%),
         0px 20px 13px rgb(0, 0, 0, 3.5%),
         0px 8.15px 6.52px rgb(0, 0, 0, 2.75%),
@@ -206,7 +201,6 @@ main {
 }
 
 .controls-btns__btn--copy {
-    /* display: none; */
     margin: 32px;
     width: 81.34%;
 
@@ -235,7 +229,6 @@ main {
 .out-text__result--p2 {
     padding: 10px 32px 20px 32px;
     text-align: left;
-    /* background: yellow; */
     color: var(--color-grisOscuro-letra);
     font-size: 24px;
     font-family: var(--font-inter);
@@ -285,7 +278,6 @@ footer {
 
     /* -> main ***************************************/
     main {
-        /* background: rgb(206, 238, 130); */
         width: 90%;
         padding: 50px 40px 60px 40px;
         height: 90.63%;
@@ -329,16 +321,11 @@ footer {
         width: 100%;
     }
 
-    .out-text__result--p1 {
-        /* display: none; */
-    }
-
     .out-text__result--p2 {
         display: block;
         padding: 10px 32px 20px 32px;
         line-height: 150%;
         text-align: left;
-        /* background: rgb(85, 85, 66); */
         color: var(--color-grisOscuro-letra);
         font-size: 32px;
         font-family: var(--font-inter);
@@ -350,7 +337,6 @@ footer {
 
     /* -> main ***************************************/
     main {
-        /* background: red; */
         width: 100%;
         padding: 0;
     }
@@ -358,8 +344,6 @@ footer {
     .container {
         width: 82%;
         height: 90vh;
-        /* height: 100%; */
-        /* background: gray; */
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -369,7 +353,6 @@ footer {
 
     .in-text,
     .out-text {
-        /* outline: solid 1px red; */
         height: 82%;
         padding: 80px 0 0 0;
         margin: 0;
@@ -426,8 +409,6 @@ footer {
 
     .out-text {
         width: 39%;
-        /* height: 100%; */
-        /* background: green; */
     }
 
     .out-text__result {
@@ -461,7 +442,6 @@ footer {
 
 
     /* -> footer ***************************************/
-
     .footer__container {
         width: 82%;
         border-radius: 20px;

@@ -71,13 +71,13 @@ Permite revertir la encriptacion colocando el texto encriptado en el input de en
 
 
 ##### Version Movil 375 x 933
-![alt text](image-1.png) ![alt text](image-2.png)
+![alt text](./img/image-1.png) ![alt text](./img/image-2.png)
 
 ##### Version Tablet Vertical  768 x 1174
-![alt text](image-3.png)
+![alt text](./img/image-3.png)
 
 ##### Version Desktop 
-![alt text](image.png)
+![alt text](./img/image.png)
 
 #### Programación
 &#9989; El input de entrada convierte automaticamente a minusculas el texto recibido utilizando el evento 'input'  
